@@ -3,6 +3,8 @@
             [clojure.string :as str])
   (:gen-class))
 
+(defn into-int [s] (Integer/parseInt s))
+  
 (defn get-input-lines
   [path]
   (str/split-lines (slurp (io/resource path))))
