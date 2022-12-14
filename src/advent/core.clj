@@ -5,6 +5,5 @@
 
 (defn into-int [s] (Integer/parseInt s))
   
-(defn get-input-lines
-  [path]
-  (str/split-lines (slurp (io/resource path))))
+(defn get-input [path] (slurp (io/resource path)))
+(defn get-input-lines [path] (str/split-lines (get-input path)))
